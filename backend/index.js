@@ -1,14 +1,13 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const app = express()
+const port = 5000
+const mongoDB = require("./db")
 const cors = require('cors')
-const mongoDB = require('./db');
-const port = 5000;
 
 app.use(express.json()) ;
 app.use(cors()) ;
 
-
-mongoDB();
+mongoDB() ;
 
 // app.use((req,res,next)=>{
 //   res.setHeader("Access-Control-Allow-Origin", "https://hp-electronics-frontend.vercel.app");
