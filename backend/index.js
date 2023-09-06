@@ -5,7 +5,7 @@ const port = 5000;
 
 app.use(cors(
     {
-        origin: ["https://deploy-mern-frontend.vercel.app"],
+        origin: ["https://hp-electronics-frontend.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
